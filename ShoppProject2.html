@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cleo Muki</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<style type="text/css">
+.mySlides {display:none;
+	min-height: 250px;
+	min-width: 325px;
+	top: 0;
+}
+.travel {font: helvetica;}
+body {
+	color: #665544:
+	background-color: #d4d0c6;
+	background-image: url("images/backdrop.gif");
+	font-family: fantasy;
+	border-radius: 10px;
+	font-size: 20px;
+	font: #0000;
+	text-align: center;
+	margin: 0px;
+}
+
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+	padding: 20px 50px 50px 100px
+
+
+}
+
+.header { 
+	margin: 40px 40px 40px 150px;
+	padding: 0px 65px 40px 40px;
+	border: 10px 100px 10px 100px;
+	border-style: double;
+	width: 400px;
+	height: 475px;
+	content: center;
+
+
+}
+
+
+.entry {
+
+	width: 220px;
+	float: left;
+	margin: 10px;
+	height: 198px;
+	background-image: url("images/shadow.png");
+}
+
+.input {
+	content: 100px 13px
+}
+
+.one {
+	border-style: outset;
+	padding: 0px 0px 0px 0px;
+}
+.two {
+	border-style: outset;
+}
+.three {
+	border-style: outset;
+
+}
+.four {
+	border-style: outset;
+}
+.five {
+	border-style: outset;
+	
+}
+.six {
+	border-style: outset;
+}
+
+.img {
+	border: 0px 100px 0px 0px;
+	margin: 0px 100px 0px 0px;
+	padding: 0px 50px 0px 0px;
+	content: 0px 200px 0px 0px;
+}
+.title {
+	margin: 0 auto;
+	padding: 0;
+}
+
+.main {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.placeholder {
+	height: 400px;
+	width: 33%;
+}
+
+.img-con {
+	height: 300px;
+}
+
+.img-con img {
+	height: 100%;
+}
+
+
+</style>
+</head>
+<body>
+<div class="wrapper">
+<div class="header">
+
+
+<div class="w3-content w3-section" style="max-width:500px">
+<img class="mySlides" src="Yezi.png" style="width:100%">
+<img class="mySlides" src="pic5.png" style="width:100%">
+<img class="mySlides" src="pic8.png" style="width:100%">
+  <img class="mySlides" src="grand.jpg" style="width:100%">
+     <img class="mySlides" src="pic15.png" style="width:100%">
+      <img class="mySlides" src="francechurch.jpg" style="width:100%">
+       <img class="mySlides" src="pic3.png" style="width:100%">
+       <img class="mySlides" src="pic7.png" style="width:100%">
+       <img class="mySlides" src="pic11.png" style="width:100%">
+        <img class="mySlides" src="mountain.jpg" style="width:100%">
+        <img class="mySlides" src="pic2.png" style="width:100%">
+        <img class="mySlides" src="pic14.png" style="width:100%">
+        <img class="mySlides" src="pic4.png" style="width:100%">
+
+        </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+  
+}
+
+alert("Javascript works!")
+   $("button").on("click", function() { alert("clicked!") })
+</script>
+
+<p class="title"> Yezi is a theme collection of hand knits, accessories, and clothing ready to fill the day.
+</p>
+</div>
+</div>
+
+<div class="main">
+
+<div class="placeholder">
+<p class="img-con">
+<img src="girl1.jpg" />
+</p>
+
+<input class="one buy" type="text"placeholder="$50 He loves me" />
+</div>
+
+<div class="placeholder">
+<p class="img-con">
+<img src="girl2.png" />
+</p>
+
+<input class="two buy" type="text"placeholder="$50 Wednesday" />
+</div>
+
+<div class="placeholder">
+<p class="img-con">
+<img src="girl3.png" />
+</p>
+
+<input class="three buy" type="text"placeholder="$50 Turkish knit" />
+</div>
+
+<div class="placeholder">
+<p class="img-con">
+<img src="girl4.png" />
+</p>
+
+<input class="four buy" type="text"placeholder="$50 Wooley one" />
+</div>
+
+<div class="placeholder">
+<p class="img-con">
+<img src="girl5.png" />
+</p>
+
+<input class="five buy" type="text"placeholder="$50 Joan" />
+</div>
+
+<div class="placeholder">
+<p class="img-con">
+<img src="girl6.jpg" /> 
+</p>
+
+<input class="six buy" type="text"placeholder="$50 Red Hot">
+</div>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
